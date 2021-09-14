@@ -1,8 +1,7 @@
-package builder.examples;
+package builder.examples.okhttp;
 
 import okhttp3.Interceptor;
 
-import java.lang.annotation.Target;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,22 +21,20 @@ public class OkhttpClient {
 //        writeTimeout=builder.readTimeout;
 //    }
 
-    public Builder newBuilder(){
+    public  Builder newBuilder(){
         return new Builder(this);
     }
 
     public OkhttpClient build(){
         //return new Builder(this);
-        return null;
+        return new OkhttpClient();
     }
 
     public OkhttpClient (){
-        //return new OkhttpClient(this);
-
     }
 
     public OkhttpClient (Builder builder){
-        //return new OkhttpClient(this);
+      //   return new OkhttpClient(this);
 
     }
 

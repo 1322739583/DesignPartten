@@ -29,8 +29,6 @@ public abstract class OrgComponent {
         this.des = des;
     }
 
-
-
     public void add(OrgComponent component) {
         throw new UnsupportedOperationException();
     }
@@ -40,6 +38,5 @@ public abstract class OrgComponent {
     }
 
     public abstract void print();
-
 
 }
